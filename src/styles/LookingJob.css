@@ -1,0 +1,206 @@
+.lookingjob {
+  width: 100%;
+  padding: 4rem;
+  background-color: #f9f9f9; /* light gray background */
+  font-family: "Poppins", sans-serif;
+}
+
+/* -------------------------------------- */
+/*            MAIN wrapper                */
+/* -------------------------------------- */
+.lookingjob-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* LEFT CONTENT */
+.lookingjob-left {
+  flex: 1 1 400px;
+}
+
+.lookingjob-subtitle {
+  font-size: 1rem;
+  color: #0050cc;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.lookingjob-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #0e0e0e;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.lookingjob-btn {
+  background: linear-gradient(90deg, #0066ff, #0050cc);
+  color: #fff;
+  padding: 0.9rem 1.8rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 80, 204, 0.25);
+}
+
+.lookingjob-btn:hover {
+  background: linear-gradient(90deg, #0050cc, #0040a8);
+  transform: translateY(-2px);
+}
+
+/* RIGHT IMAGE */
+.lookingjob-right {
+  flex: 1 1 550px;
+  display: flex;
+  justify-content: center;
+}
+
+.lookingjob-right img {
+  width: 100%;
+  max-width: 550px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+/* -------------------------------------- */
+/*              STATS SECTION             */
+/* -------------------------------------- */
+.lookingjob-stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 3.5rem auto 0;
+  padding: 0 1rem;
+}
+
+/* LEFT SIDE */
+.lookingjob-leftstat {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.lookingjob-join {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.lookingjob-join span {
+  color: #0050cc;
+  font-weight: 700;
+}
+
+/* AVATARS */
+.lookingjob-avatars {
+  display: flex;
+  align-items: center;
+  max-width: 150px;
+}
+
+.lookingjob-avatars img {
+  width: 100%;
+  height: 100%;
+}
+
+.lookingjob-avatars img:first-child {
+  margin-left: 0;
+}
+
+/* RIGHT SIDE STATS */
+.lookingjob-rightstat {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.lookingjob-stat h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0050cc;
+  margin-bottom: 0.3rem;
+}
+
+.lookingjob-stat h2 span {
+  font-weight: 600;
+}
+
+.lookingjob-stat p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* -------------------------------------- */
+/*            RESPONSIVE DESIGN           */
+/* -------------------------------------- */
+@media (max-width: 1024px) {
+  .lookingjob-title {
+    font-size: 2.3rem;
+  }
+
+  .lookingjob-right img {
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 768px) {
+  .lookingjob-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .lookingjob-left,
+  .lookingjob-right {
+    flex: 1 1 auto;
+  }
+
+  .lookingjob-right img {
+    width: 90%;
+  }
+
+  .lookingjob-stats {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .lookingjob-leftstat {
+    justify-content: center;
+  }
+
+  .lookingjob-rightstat {
+    justify-content: center;
+  }
+
+  .lookingjob-avatars {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .lookingjob-title {
+    font-size: 1.9rem;
+  }
+
+  .lookingjob-btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .lookingjob-stat h2 {
+    font-size: 1.6rem;
+  }
+  .lookingjob {
+    padding: 2.5rem 2rem;
+  }
+}

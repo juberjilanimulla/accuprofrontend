@@ -1,0 +1,148 @@
+/* ========= BASE STYLES ========= */
+.platform-section {
+  width: 100%;
+  background: #fff;
+  padding: 50px 40px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.platform-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+/* ========= ROWS ========= */
+.platform-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+/* ========= IMAGE ========= */
+.platform-image {
+  flex: 1;
+  width: 100%;
+}
+
+.platform-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* ========= CONTENT ========= */
+.platform-content {
+  flex: 1;
+}
+
+.platform-title {
+  font-size: 1.9rem;
+  color: #111;
+  font-weight: 300;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.platform-text {
+  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+
+.platform-link {
+  color: #014ab9;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.platform-link:hover {
+  color: #003d80;
+}
+
+/* ========= RESPONSIVE ========= */
+
+/* --- For Laptops (1024px) --- */
+@media (max-width: 1024px) {
+  .platform-section {
+    padding: 80px 30px;
+  }
+
+  .platform-title {
+    font-size: 1.7rem;
+  }
+
+  .platform-text {
+    font-size: 0.95rem;
+  }
+
+  .platform-row {
+    gap: 2rem;
+  }
+}
+
+/* --- For Tablets (768px) --- */
+@media (max-width: 768px) {
+  .platform-row {
+    flex-direction: column;
+  }
+  .platform-row-bottom {
+    flex-direction: column-reverse;
+  }
+  .platform-image,
+  .platform-content {
+    /* order: unset !important; */
+    width: 100%;
+  }
+
+  .platform-container {
+    gap: 80px;
+  }
+
+  .platform-title {
+    font-size: 1.6rem;
+  }
+
+  .platform-text {
+    font-size: 0.95rem;
+  }
+
+  .platform-link {
+    justify-content: center;
+  }
+}
+
+/* --- For Mobile (480px) --- */
+@media (max-width: 480px) {
+  .platform-section {
+    padding: 60px 20px;
+  }
+
+  .platform-container {
+    gap: 60px;
+  }
+
+  .platform-title {
+    font-size: 1.4rem;
+  }
+
+  .platform-text {
+    font-size: 0.9rem;
+  }
+
+  .platform-link {
+    font-size: 0.9rem;
+  }
+
+  .platform-image img {
+    border-radius: 8px;
+  }
+}
